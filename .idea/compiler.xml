@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CI&amp;T-API" />
+        <module name="CIET-API" />
       </profile>
     </annotationProcessing>
   </component>
