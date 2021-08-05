@@ -26,6 +26,6 @@ public class GetSteps {
     given().when().get("https://g1lru963f9.api.quickmocker.com/")
             .then()
             .statusCode(200).
-            body("name", containsString("Joaquina"));
+            body("users[0].name", containsString("Michael"));
   }
 }
