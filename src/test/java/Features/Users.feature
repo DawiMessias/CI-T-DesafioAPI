@@ -1,13 +1,13 @@
 #language: pt
 
 @GET
-Funcionalidade: Coleção Users
+Funcionalidade: Users Collection
 
-  Cenario: Verifico a funcionalidade da API
-    Dado realizo uma requisição na API
-    Então valido o tamanho da coleção users
+  Cenario: I check api functionality
+    Dado I make a request in the API
+    Então valid the size of the users collection
 
 
-  Cenario: Verifico valores dos campos
-    Dado realizo uma requisição na API
-    Então valido os campos da coleção users
+  Cenario: I check field values
+    Dado I make a request in the API
+    Então valid the fields of the users collection

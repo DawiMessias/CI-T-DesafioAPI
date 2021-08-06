@@ -1,8 +1,8 @@
 #language: pt
 
 @GET
-Funcionalidade: validar valores do objeto address
+Funcionalidade: validate object address values
 
-  Cenario: Verifico a funcionalidade da API
-    Dado realizar uma requisição get na url
-    Então valido todos os valores e campos
+  Cenario: I check api functionality
+    Dado perform a get request at the url
+    Então valid all values and fields

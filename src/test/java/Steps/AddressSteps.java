@@ -7,9 +7,9 @@ public class AddressSteps {
 
   Methods methods = new Methods();
 
-  @Então("valido todos os valores e campos")
-  public void valido_todos_os_valores_e_campos() {
-    methods.validoTamanhoAddress();
-    methods.validoValoresAddress();
+  @Então("valid all values and fields")
+  public void valid_all_values_and_fields() {
+//    methods.validoTamanhoAddress();
+    methods.validatesValuesAddress();
   }
 }
