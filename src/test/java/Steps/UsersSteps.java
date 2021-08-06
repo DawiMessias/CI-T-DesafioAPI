@@ -8,21 +8,21 @@ public class UsersSteps {
 
   Methods methods = new Methods();
 
-  @Dado("realizo uma requisição na API")
-  public void realizo_uma_requisição_na_api() {
-    methods.realizaGetNaUrl();
+  @Dado("I make a request in the API")
+  public void i_make_a_request_in_the_api() {
+    methods.get();
 
   }
-  @Então("valido o tamanho da coleção users")
-  public void valido_o_tamanho_da_coleção_users() {
-    methods.validoTamanhoColeçãoUsers();
+  @Então("valid the size of the users collection")
+  public void valid_the_size_of_the_users_collection() {
+    methods.validSizeCollectionUsers();
   }
 
-  @Então("valido os campos da coleção users")
-  public void valido_os_campos_da_coleção_users() {
+  @Então("valid the fields of the users collection")
+  public void valid_the_fields_of_the_users_collection() {
 //    methods.validaCamposUsers();
-    methods.validaValoresPrimeiroObjeto();
-    methods.validaValoresSegundoObjeto();
+    methods.validatesValuesFirstObject();
+    methods.validatesValuesSecondObject();
   }
 
 

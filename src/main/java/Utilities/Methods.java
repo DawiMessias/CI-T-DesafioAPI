@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.*;
 
 public class Methods {
 
-  public void realizaGetNaUrl() {
+  public void get() {
     given().contentType(ContentType.JSON);
     given().when().get("https://g1lru963f9.api.quickmocker.com/")
             .then()
@@ -18,18 +18,18 @@ public class Methods {
 
 
 
-//  public void validoTamanhoColeçãoUsers() {
-//    given().contentType(ContentType.JSON);
-//    given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
-//            .body("users", hasSize(2));
-  //Tentei validar o tamanho do objeto Address, sem sucesso;
-//  }
-
-  public void validoTamanhoAddress() {
+  public void validSizeCollectionUsers() {
     given().contentType(ContentType.JSON);
     given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
-            .body("address.", hasSize(3));
+            .body("users", hasSize(2));
   }
+
+//  public void validoTamanhoAddress() {
+//    given().contentType(ContentType.JSON);
+//    given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
+//            .body("address.", hasSize(3));
+    //Tentei validar o tamanho do objeto Address, sem sucesso;
+//  }
 
 
 //  public void validaCamposUsers() {
@@ -43,7 +43,7 @@ public class Methods {
 //  }
 
 
-  public void validaValoresPrimeiroObjeto() {
+  public void validatesValuesFirstObject() {
     given().contentType(ContentType.JSON);
     given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
             .body("users[0].name", is("Michael"))
@@ -53,7 +53,7 @@ public class Methods {
 
   }
 
-  public void validaValoresSegundoObjeto() {
+  public void validatesValuesSecondObject() {
     given().contentType(ContentType.JSON);
     given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
             .body("users[1].name", is("Margareth"))
@@ -62,7 +62,7 @@ public class Methods {
             .body("users[1].date_nasc", is("10/12/1968"));
   }
 
-  public void validoValoresAddress() {
+  public void validatesValuesAddress() {
     given().contentType(ContentType.JSON);
     given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
             .body("address.city", is("São Paulo"))
