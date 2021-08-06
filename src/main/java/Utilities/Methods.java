@@ -1,6 +1,7 @@
 package Utilities;
 
 import io.restassured.http.ContentType;
+import io.restassured.response.ValidatableResponse;
 import org.hamcrest.xml.HasXPath;
 
 import static io.restassured.RestAssured.given;
@@ -14,9 +15,6 @@ public class Methods {
             .then()
             .statusCode(200);
   }
-
-
-
 
   public void validSizeCollectionUsers() {
     given().contentType(ContentType.JSON);

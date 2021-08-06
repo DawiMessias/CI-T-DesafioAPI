@@ -24,14 +24,4 @@ public class RequestSteps {
   public void valid_successful_request() {
     methods.get();
   }
-
-  @Dado("cannot perform requisition other than get")
-  public void cannot_perform_requisition_other_than_get() {
-
-  }
-  @Então("valid the failure in the request")
-  public void valid_the_failure_in_the_request() {
-
-  }
-
 }
