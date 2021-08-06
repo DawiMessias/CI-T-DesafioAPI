@@ -15,11 +15,22 @@ public class Methods {
             .statusCode(200);
   }
 
-  public void validoTamanhoColeçãoUsers() {
+
+
+
+//  public void validoTamanhoColeçãoUsers() {
+//    given().contentType(ContentType.JSON);
+//    given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
+//            .body("users", hasSize(2));
+  //Tentei validar o tamanho do objeto Address, sem sucesso;
+//  }
+
+  public void validoTamanhoAddress() {
     given().contentType(ContentType.JSON);
     given().when().get("https://g1lru963f9.api.quickmocker.com/").then()
-            .body("users", hasSize(2));
+            .body("address.", hasSize(3));
   }
+
 
 //  public void validaCamposUsers() {
 //    given().contentType(ContentType.JSON);

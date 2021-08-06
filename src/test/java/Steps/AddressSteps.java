@@ -9,6 +9,7 @@ public class AddressSteps {
 
   @Então("valido todos os valores e campos")
   public void valido_todos_os_valores_e_campos() {
+    methods.validoTamanhoAddress();
     methods.validoValoresAddress();
   }
 }

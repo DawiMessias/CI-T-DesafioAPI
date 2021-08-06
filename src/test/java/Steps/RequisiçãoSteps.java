@@ -10,7 +10,7 @@ import io.restassured.response.ResponseOptions;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
-public class GetSteps {
+public class RequisiçãoSteps {
 
   Methods methods = new Methods();
 
@@ -27,4 +27,14 @@ public class GetSteps {
             .statusCode(200).
             body("users[0].name", containsString("Michael"));
   }
+
+  @Dado("não consiga realizar requisição que não seja get")
+  public void não_consiga_realizar_requisição_que_não_seja_get() {
+
+  }
+  @Então("valido a falha na requisição")
+  public void valido_a_falha_na_requisição() {
+
+  }
+
 }
